@@ -1,5 +1,6 @@
 name = Name
 surname = Surname
+role = Role
 age = Age
 description = Description
 score = Score
