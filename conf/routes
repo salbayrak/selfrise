@@ -3,13 +3,16 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.PersonController.index
-POST    /person                     controllers.PersonController.addPerson
+GET     /                           controllers.HomeController.index
+
+# Person page
+GET     /person                     controllers.PersonController.index
+POST    /addPerson                  controllers.PersonController.addPerson
 GET     /persons                    controllers.PersonController.getPersons
 
 # Goal page
-GET     /goal                           controllers.GoalController.index
-POST    /addGoal                       controllers.GoalController.addGoal
+GET     /goal                       controllers.GoalController.index
+POST    /addGoal                    controllers.GoalController.addGoal
 GET     /goals                      controllers.GoalController.getGoals
 
 # Map static resources from the /public folder to the /assets URL path
