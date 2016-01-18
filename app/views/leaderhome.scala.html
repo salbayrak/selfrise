@@ -1,0 +1,17 @@
+@main("") {
+Our Goals
+<ul id="goals"></ul>
+<script type='text/javascript' src='@routes.Assets.versioned("javascripts/goal.js")'></script>
+My Team
+<ul id="persons"></ul>
+<script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
+
+<div>
+    Add New Goal:
+    <a href="@routes.GoalController.index()">click</a>
+</div>
+<div>
+    Add New Member:
+    <a href="@routes.PersonController.index()">click</a>
+</div>
+}

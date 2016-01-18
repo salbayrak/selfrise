@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.HomeController.index
+GET     /leader                     controllers.HomeController.leaderHome
+GET     /member                     controllers.HomeController.memberHome
 
 # Person page
 GET     /person                     controllers.PersonController.index

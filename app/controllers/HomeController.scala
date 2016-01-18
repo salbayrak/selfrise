@@ -14,4 +14,12 @@ class HomeController @Inject() (val messagesApi: MessagesApi) extends Controller
     Ok(views.html.home())
   }
 
+  def leaderHome = Action {
+    Ok(views.html.leaderhome())
+  }
+
+  def memberHome = Action {
+    Ok(views.html.memberhome())
+  }
+
 }
