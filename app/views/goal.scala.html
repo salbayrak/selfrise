@@ -1,0 +1,17 @@
+@(goal: Form[CreateGoalForm])(implicit messages: Messages)
+
+@import helper._
+
+@main("selfrise") {
+<ul id="goals"></ul>
+<script type='text/javascript' src='@routes.Assets.versioned("javascripts/goal.js")'></script>
+
+@form(routes.GoalController.addGoal()) {
+@inputText(goal("description"))
+@inputText(goal("score"))
+
+<div class="buttons">
+    <input type="submit" value="Add Goal"/>
+</div>
+}
+}
